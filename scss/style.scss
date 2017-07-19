@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'STARWARS';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/STARWARS.eot') format('eot'),
+  url('../fonts/STARWARS.woff') format('woff'),
+  url('../fonts/STARWARS.ttf') format('truetype'),
+  url('../fonts/STARWARS.svg#STARWARS') format('svg');
+}
+
+body {
+  font-family: 'STARWARS';
+}
+
+p {
+  font-size: 40px;
+}
