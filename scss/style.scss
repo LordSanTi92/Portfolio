@@ -22,89 +22,10 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+}
 
-  .rebel,
-  .empire {
-    position: relative;
-    width: 100vw;
-    height: 50vh;
-  }
-
-  .rebel {
-    background-color: white;
-    text-align: right;
-
-    &:hover {
-
-      i {
-        transition: box-shadow 1s ease-in-out;
-        box-shadow: 0 0 20vh blue;
-        -webkit-transition: box-shadow 1s ease-in-out;
-      }
-    }
-
-    p {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-bottom: 10px;
-      width: 50vw;
-      height: 5vh !important;
-      text-align: center;
-      color: black;
-      font-size: 10vw;
-     }
-
-    i {
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-      width: 25vh;
-      font-size: 25vh;
-    }
-
-  }
-
-  .empire {
-    background-color: black;
-    text-align: left;
-
-    &:hover {
-
-      i {
-        transition: box-shadow 1s ease-in-out;
-        box-shadow: 0 0 20vh red;
-        -webkit-transition: box-shadow 1s ease-in-out;
-      }
-    }
-
-    p {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-top: 10px;
-      width: 50vw;
-      height: 5vh !important;
-      text-align: center;
-      color: white;
-      font-size: 10vw;
-     }
-
-    i {
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-      width: 25vh;
-      color: white;
-      font-size: 25vh;
-     }
+@media only screen and (min-width: 500px) {
+  #entry {
+    flex-direction: row;
   }
 }

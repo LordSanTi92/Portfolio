@@ -1,0 +1,48 @@
+.empire {
+  position: relative;
+  background-color: black;
+  width: 100vw;
+  height: 50vh;
+  text-align: left;
+
+  &:hover {
+
+    i {
+      transition: box-shadow 1s ease-in-out;
+      box-shadow: 0 0 20vh red;
+      -webkit-transition: box-shadow 1s ease-in-out;
+    }
+  }
+
+  p {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    width: 50vw;
+    height: 5vh !important;
+    text-align: center;
+    color: white;
+    font-size: 10vw;
+   }
+
+  i {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 25vh;
+    color: white;
+    font-size: 25vh;
+   }
+}
+
+@media only screen and (min-width: 500px) {
+  .empire {
+    width: 50vw;
+    height: 100vh;
+  }
+}
