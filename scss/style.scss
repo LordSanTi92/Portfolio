@@ -50,7 +50,7 @@ body {
       transform: translateX(-50%);
       margin-bottom: 10px;
       width: 50vw;
-      height: 5vh;
+      height: 5vh !important;
       text-align: center;
       color: black;
       font-size: 10vw;
@@ -67,14 +67,6 @@ body {
       font-size: 25vh;
     }
 
-  }
-
-  .rebelHoverOn {
-    height: 60vh !important;
-  }
-
-  .empireHoverOnRebel {
-    height: 40vh !important;
   }
 
   .empire {
@@ -97,7 +89,7 @@ body {
       transform: translateX(-50%);
       margin-top: 10px;
       width: 50vw;
-      height: 5vh;
+      height: 5vh !important;
       text-align: center;
       color: white;
       font-size: 10vw;
@@ -114,13 +106,5 @@ body {
       color: white;
       font-size: 25vh;
      }
-  }
-
-  .empireHoverOn {
-    height: 60vh !important;
-  }
-
-  .rebelHoverOnRebel {
-    height: 40vh !important;
   }
 }

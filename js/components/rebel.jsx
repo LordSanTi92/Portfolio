@@ -1,21 +1,28 @@
 import React from 'react';
-window.cancelBubble=true;
+import EventListener, {withOptions} from 'react-event-listener';
+
 class Rebel extends React.Component{
+  componentDidMount() {
+
+}
   MouseOn = e =>{
-    $(e.target).next().addClass('empireHoverOnRebel',500);
-    $(e.target).addClass("rebelHoverOn",500);
+    e.stopPropagation();
+    console.log(e.isPropagationStopped());
+    $(e.target).next().stop().animate({height:"40vh"},500);
+    $(e.target).stop().animate({height:"60vh"},500);
     $(e.target).find('i').stop().animate({color:"blue"},500)
-    e.stopPropagation()
   }
   MouseOut = e =>{
-    $(e.target).next().removeClass('empireHoverOnRebel',500);
-    $(e.target).removeClass("rebelHoverOn",500);
+    e.stopPropagation();
+    console.log(e.isPropagationStopped());
+    $(e.target).next().stop().animate({height:"50vh"},500);
+    $(e.target).stop().animate({height:"50vh"},500);
     $(e.target).find('i').stop().animate({color:"black"},500);
-      e.stopPropagation()
+
   }
   render(){
-    return  <div className="rebel" onMouseEnter={e=>this.MouseOn(e)} onMouseLeave={e=>this.MouseOut(e)}>
-                <i className="fa fa-rebel"></i>
+    return  <div className="rebel" onMouseEnter={this.MouseOn} onMouseLeave={this.MouseOut}>
+                <i className="fa fa-rebel"/>
                 <p>CHOOSE</p>
             </div>
   }
