@@ -27,5 +27,6 @@ body {
 @media only screen and (min-width: 500px) {
   #entry {
     flex-direction: row;
+    overflow: hidden;
   }
 }

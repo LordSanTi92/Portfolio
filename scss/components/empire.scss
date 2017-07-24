@@ -3,14 +3,13 @@
   background-color: black;
   width: 100vw;
   height: 50vh;
-  text-align: left;
 
   &:hover {
 
     i {
-      transition: box-shadow 1s ease-in-out;
+      transition: box-shadow 0.5s ease-in-out;
       box-shadow: 0 0 20vh red;
-      -webkit-transition: box-shadow 1s ease-in-out;
+      -webkit-transition: box-shadow 0.5s ease-in-out;
     }
   }
 
@@ -44,5 +43,12 @@
   .empire {
     width: 50vw;
     height: 100vh;
+
+    p {
+      top: 10px;
+      margin: 0;
+      text-align: center;
+      font-size: 50px;
+    }
   }
 }

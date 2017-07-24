@@ -25623,7 +25623,7 @@ exports = module.exports = __webpack_require__(82)(undefined);
 
 
 // module
-exports.push([module.i, ".rebel {\n  position: relative;\n  background-color: white;\n  width: 100vw;\n  height: 50vh;\n  text-align: right; }\n  .rebel:hover i {\n    transition: box-shadow 1s ease-in-out;\n    box-shadow: 0 0 20vh blue;\n    -webkit-transition: box-shadow 1s ease-in-out; }\n  .rebel p {\n    position: absolute;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    margin-bottom: 10px;\n    width: 50vw;\n    height: 5vh !important;\n    text-align: center;\n    color: black;\n    font-size: 10vw; }\n  .rebel i {\n    display: block;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    border-radius: 50%;\n    width: 25vh;\n    font-size: 25vh; }\n\n@media only screen and (min-width: 500px) {\n  .rebel {\n    width: 50vw;\n    height: 100vh; } }\n", ""]);
+exports.push([module.i, ".rebel {\n  position: relative;\n  background-color: white;\n  width: 100vw;\n  height: 50vh; }\n  .rebel:hover i {\n    transition: box-shadow 0.5s ease-in-out;\n    box-shadow: 0 0 20vh blue;\n    -webkit-transition: box-shadow 0.5s ease-in-out; }\n  .rebel p {\n    position: absolute;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    margin-bottom: 10px;\n    width: 50vw;\n    height: 5vh !important;\n    text-align: center;\n    color: black;\n    font-size: 10vw; }\n  .rebel i {\n    display: block;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    border-radius: 50%;\n    width: 25vh;\n    font-size: 25vh; }\n\n@media only screen and (min-width: 500px) {\n  .rebel {\n    width: 50vw;\n    height: 100vh; }\n    .rebel p {\n      top: 10px;\n      right: 0;\n      transform: translateX(-50%);\n      margin: 0;\n      text-align: center;\n      font-size: 50px; } }\n", ""]);
 
 // exports
 
@@ -25859,7 +25859,7 @@ exports = module.exports = __webpack_require__(82)(undefined);
 
 
 // module
-exports.push([module.i, ".empire {\n  position: relative;\n  background-color: black;\n  width: 100vw;\n  height: 50vh;\n  text-align: left; }\n  .empire:hover i {\n    transition: box-shadow 1s ease-in-out;\n    box-shadow: 0 0 20vh red;\n    -webkit-transition: box-shadow 1s ease-in-out; }\n  .empire p {\n    position: absolute;\n    top: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    margin-top: 10px;\n    width: 50vw;\n    height: 5vh !important;\n    text-align: center;\n    color: white;\n    font-size: 10vw; }\n  .empire i {\n    display: block;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    border-radius: 50%;\n    width: 25vh;\n    color: white;\n    font-size: 25vh; }\n\n@media only screen and (min-width: 500px) {\n  .empire {\n    width: 50vw;\n    height: 100vh; } }\n", ""]);
+exports.push([module.i, ".empire {\n  position: relative;\n  background-color: black;\n  width: 100vw;\n  height: 50vh; }\n  .empire:hover i {\n    transition: box-shadow 0.5s ease-in-out;\n    box-shadow: 0 0 20vh red;\n    -webkit-transition: box-shadow 0.5s ease-in-out; }\n  .empire p {\n    position: absolute;\n    top: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    margin-top: 10px;\n    width: 50vw;\n    height: 5vh !important;\n    text-align: center;\n    color: white;\n    font-size: 10vw; }\n  .empire i {\n    display: block;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    border-radius: 50%;\n    width: 25vh;\n    color: white;\n    font-size: 25vh; }\n\n@media only screen and (min-width: 500px) {\n  .empire {\n    width: 50vw;\n    height: 100vh; }\n    .empire p {\n      top: 10px;\n      margin: 0;\n      text-align: center;\n      font-size: 50px; } }\n", ""]);
 
 // exports
 
@@ -25904,7 +25904,7 @@ exports = module.exports = __webpack_require__(82)(undefined);
 
 
 // module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\n@font-face {\n  font-family: 'STARWARS';\n  font-weight: normal;\n  font-style: normal;\n  src: url(" + __webpack_require__(297) + ") format(\"eot\"), url(" + __webpack_require__(298) + ") format(\"woff\"), url(" + __webpack_require__(299) + ") format(\"truetype\"), url(" + __webpack_require__(300) + "#STARWARS) format(\"svg\"); }\n\nbody {\n  font-family: 'STARWARS'; }\n\n#entry {\n  display: flex;\n  flex-direction: column;\n  flex-wrap: nowrap; }\n\n@media only screen and (min-width: 500px) {\n  #entry {\n    flex-direction: row; } }\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\n@font-face {\n  font-family: 'STARWARS';\n  font-weight: normal;\n  font-style: normal;\n  src: url(" + __webpack_require__(297) + ") format(\"eot\"), url(" + __webpack_require__(298) + ") format(\"woff\"), url(" + __webpack_require__(299) + ") format(\"truetype\"), url(" + __webpack_require__(300) + "#STARWARS) format(\"svg\"); }\n\nbody {\n  font-family: 'STARWARS'; }\n\n#entry {\n  display: flex;\n  flex-direction: column;\n  flex-wrap: nowrap; }\n\n@media only screen and (min-width: 500px) {\n  #entry {\n    flex-direction: row;\n    overflow: hidden; } }\n", ""]);
 
 // exports
 
