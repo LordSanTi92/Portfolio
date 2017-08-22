@@ -24298,52 +24298,17 @@ var Rebel = function (_React$Component) {
   _inherits(Rebel, _React$Component);
 
   function Rebel() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
     _classCallCheck(this, Rebel);
 
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Rebel.__proto__ || Object.getPrototypeOf(Rebel)).call.apply(_ref, [this].concat(args))), _this), _this.MouseOn = function (e) {
-      e.stopPropagation();
-
-      if ($(window).outerWidth() > 499) {
-        $(e.target).next().stop().animate({ width: "40vw" }, 500);
-        $(e.target).stop().animate({ width: "60vw" }, 500);
-        $(e.target).find('i').stop().animate({ color: "blue" }, 500);
-      } else {
-        $(e.target).next().stop().animate({ height: "40vh" }, 500);
-        $(e.target).stop().animate({ height: "60vh" }, 500);
-        $(e.target).find('i').stop().animate({ color: "blue" }, 500);
-      }
-    }, _this.MouseOut = function (e) {
-      e.stopPropagation();
-
-      if ($(window).outerWidth() > 499) {
-        $(e.target).next().stop().animate({ width: "50vw" }, 500);
-        $(e.target).stop().animate({ width: "50vw" }, 500);
-        $(e.target).find('i').stop().animate({ color: "black" }, 500);
-      } else {
-        $(e.target).next().stop().animate({ height: "50vh" }, 500);
-        $(e.target).stop().animate({ height: "50vh" }, 500);
-        $(e.target).find('i').stop().animate({ color: "black" }, 500);
-      }
-    }, _temp), _possibleConstructorReturn(_this, _ret);
+    return _possibleConstructorReturn(this, (Rebel.__proto__ || Object.getPrototypeOf(Rebel)).apply(this, arguments));
   }
 
   _createClass(Rebel, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {}
-  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: 'rebel', onMouseEnter: this.MouseOn, onMouseLeave: this.MouseOut },
+        { className: 'rebel' },
         _react2.default.createElement('i', { className: 'fa fa-rebel' }),
         _react2.default.createElement(
           'p',
@@ -25623,7 +25588,7 @@ exports = module.exports = __webpack_require__(82)(undefined);
 
 
 // module
-exports.push([module.i, ".rebel {\n  position: relative;\n  background-color: white;\n  width: 100vw;\n  height: 50vh; }\n  .rebel:hover i {\n    transition: box-shadow 0.5s ease-in-out;\n    box-shadow: 0 0 20vh blue;\n    -webkit-transition: box-shadow 0.5s ease-in-out; }\n  .rebel p {\n    position: absolute;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    margin-bottom: 10px;\n    width: 50vw;\n    height: 5vh !important;\n    text-align: center;\n    color: black;\n    font-size: 10vw; }\n  .rebel i {\n    display: block;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    border-radius: 50%;\n    width: 25vh;\n    font-size: 25vh; }\n\n@media only screen and (min-width: 500px) {\n  .rebel {\n    width: 50vw;\n    height: 100vh; }\n    .rebel p {\n      top: 10px;\n      right: 0;\n      transform: translateX(-50%);\n      margin: 0;\n      text-align: center;\n      font-size: 50px; } }\n", ""]);
+exports.push([module.i, ".rebel {\n  flex: 1;\n  transition: .5s;\n  max-height: 50%;\n  width: 100vw;\n  min-height: 10%;\n  position: relative; }\n  .rebel:hover {\n    transition: .5s;\n    max-height: 65% !important;\n    flex-grow: 2;\n    cursor: pointer; }\n    .rebel:hover i {\n      transition: .8s ease-in-out;\n      box-shadow: 0 0 10px 10px green, inset 0 0 5px 15px green; }\n    .rebel:hover p {\n      color: green;\n      transition: .8s ease-in-out; }\n  .rebel p {\n    transition: .8s ease-in-out;\n    font-size: 45px;\n    position: absolute;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%); }\n  .rebel i {\n    transition: .8s ease-in-out;\n    display: block;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    border-radius: 50%;\n    width: 20vh;\n    font-size: 20vh; }\n\n@media only screen and (min-width: 700px) {\n  .rebel {\n    flex: 1;\n    text-align: right;\n    transition: .5s;\n    max-width: 50%;\n    height: 100vh;\n    min-width: 10%;\n    position: relative;\n    max-height: none;\n    width: 0; }\n    .rebel:hover {\n      transition: .5s;\n      max-width: 65% !important;\n      max-height: none !important;\n      flex-grow: 2;\n      cursor: pointer; }\n      .rebel:hover i {\n        transition: .8s ease-in-out;\n        box-shadow: 0 0 10px 10px green, inset 0 0 5px 15px green; }\n      .rebel:hover p {\n        color: green;\n        transition: .8s ease-in-out; }\n    .rebel p {\n      transition: .8s ease-in-out;\n      margin: 10px;\n      text-align: right;\n      font-size: 50px;\n      position: relative;\n      bottom: 0;\n      left: 0;\n      transform: none; }\n    .rebel i {\n      transition: .8s ease-in-out;\n      display: block;\n      position: absolute;\n      top: 50%;\n      left: 50%;\n      transform: translate(-50%, -50%);\n      border-radius: 50%;\n      width: 25vh;\n      font-size: 25vh; } }\n", ""]);
 
 // exports
 
@@ -25758,52 +25723,17 @@ var Empire = function (_React$Component) {
   _inherits(Empire, _React$Component);
 
   function Empire() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
     _classCallCheck(this, Empire);
 
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Empire.__proto__ || Object.getPrototypeOf(Empire)).call.apply(_ref, [this].concat(args))), _this), _this.MouseOn = function (e) {
-      e.stopPropagation();
-
-      if ($(window).outerWidth() > 499) {
-        $(e.target).prev().stop().animate({ width: "40vw" }, 500);;
-        $(e.target).stop().animate({ width: "60vw" }, 500);
-        $(e.target).find('i').stop().animate({ color: "red" }, 500);
-      } else {
-        $(e.target).prev().stop().animate({ height: "40vh" }, 500);;
-        $(e.target).stop().animate({ height: "60vh" }, 500);
-        $(e.target).find('i').stop().animate({ color: "red" }, 500);
-      }
-    }, _this.MouseOut = function (e) {
-      e.stopPropagation();
-
-      if ($(window).outerWidth() > 499) {
-        $(e.target).find('i').stop().animate({ color: "white" }, 500);
-        $(e.target).prev().stop().animate({ width: "50vw" }, 500);
-        $(e.target).stop().animate({ width: "50vw" }, 500);
-      } else {
-        $(e.target).find('i').stop().animate({ color: "white" }, 500);
-        $(e.target).prev().stop().animate({ height: "50vh" }, 500);
-        $(e.target).stop().animate({ height: "50vh" }, 500);
-      }
-    }, _temp), _possibleConstructorReturn(_this, _ret);
+    return _possibleConstructorReturn(this, (Empire.__proto__ || Object.getPrototypeOf(Empire)).apply(this, arguments));
   }
 
   _createClass(Empire, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {}
-  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: 'empire', onMouseEnter: this.MouseOn, onMouseLeave: this.MouseOut },
+        { className: 'empire' },
         _react2.default.createElement(
           'p',
           null,
@@ -25859,7 +25789,7 @@ exports = module.exports = __webpack_require__(82)(undefined);
 
 
 // module
-exports.push([module.i, ".empire {\n  position: relative;\n  background-color: black;\n  width: 100vw;\n  height: 50vh; }\n  .empire:hover i {\n    transition: box-shadow 0.5s ease-in-out;\n    box-shadow: 0 0 20vh red;\n    -webkit-transition: box-shadow 0.5s ease-in-out; }\n  .empire p {\n    position: absolute;\n    top: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    margin-top: 10px;\n    width: 50vw;\n    height: 5vh !important;\n    text-align: center;\n    color: white;\n    font-size: 10vw; }\n  .empire i {\n    display: block;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    border-radius: 50%;\n    width: 25vh;\n    color: white;\n    font-size: 25vh; }\n\n@media only screen and (min-width: 500px) {\n  .empire {\n    width: 50vw;\n    height: 100vh; }\n    .empire p {\n      top: 10px;\n      margin: 0;\n      text-align: center;\n      font-size: 50px; } }\n", ""]);
+exports.push([module.i, ".empire {\n  flex: 1;\n  transition: .5s;\n  width: 100vw;\n  max-height: 50%;\n  min-height: 10%;\n  position: relative;\n  background-color: black; }\n  .empire:hover {\n    transition: .5s;\n    max-height: 65% !important;\n    flex-grow: 2;\n    cursor: pointer; }\n    .empire:hover i {\n      transition: .8s ease-in-out;\n      box-shadow: 0 0 10px 10px red, inset 0 0 5px 15px red; }\n    .empire:hover p {\n      transition: .8s ease-in-out;\n      color: red; }\n  .empire p {\n    margin: 10px 0 0 0;\n    text-align: center;\n    font-size: 45px;\n    color: white; }\n  .empire i {\n    transition: .5s;\n    display: block;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    border-radius: 50%;\n    width: 20vh;\n    color: white;\n    font-size: 20vh; }\n\n@media only screen and (min-width: 700px) {\n  .empire {\n    flex: 1;\n    text-align: right;\n    transition: .5s;\n    max-width: 50%;\n    height: 100vh;\n    min-width: 10%;\n    position: relative;\n    background-color: black;\n    max-height: none;\n    width: 0; }\n    .empire:hover {\n      transition: .5s;\n      max-width: 65% !important;\n      max-height: none !important;\n      flex-grow: 2;\n      cursor: pointer; }\n      .empire:hover i {\n        transition: .8s ease-in-out;\n        box-shadow: 0 0 10px 10px red, inset 0 0 5px 15px red; }\n      .empire:hover p {\n        transition: .8s ease-in-out;\n        color: red; }\n    .empire p {\n      margin: 10px;\n      text-align: left;\n      font-size: 50px;\n      color: white; }\n    .empire i {\n      transition: .5s;\n      display: block;\n      position: absolute;\n      top: 50%;\n      left: 50%;\n      transform: translate(-50%, -50%);\n      border-radius: 50%;\n      width: 25vh;\n      color: white;\n      font-size: 25vh; } }\n", ""]);
 
 // exports
 
@@ -25904,7 +25834,7 @@ exports = module.exports = __webpack_require__(82)(undefined);
 
 
 // module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\n@font-face {\n  font-family: 'STARWARS';\n  font-weight: normal;\n  font-style: normal;\n  src: url(" + __webpack_require__(297) + ") format(\"eot\"), url(" + __webpack_require__(298) + ") format(\"woff\"), url(" + __webpack_require__(299) + ") format(\"truetype\"), url(" + __webpack_require__(300) + "#STARWARS) format(\"svg\"); }\n\nbody {\n  font-family: 'STARWARS'; }\n\n#entry {\n  display: flex;\n  flex-direction: column;\n  flex-wrap: nowrap; }\n\n@media only screen and (min-width: 500px) {\n  #entry {\n    flex-direction: row;\n    overflow: hidden; } }\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\n@font-face {\n  font-family: 'STARWARS';\n  font-weight: normal;\n  font-style: normal;\n  src: url(" + __webpack_require__(297) + ") format(\"eot\"), url(" + __webpack_require__(298) + ") format(\"woff\"), url(" + __webpack_require__(299) + ") format(\"truetype\"), url(" + __webpack_require__(300) + "#STARWARS) format(\"svg\"); }\n\nbody {\n  font-family: 'STARWARS'; }\n\n#entry {\n  display: flex;\n  flex-direction: column;\n  flex-wrap: nowrap;\n  justify-content: center;\n  height: 100vh; }\n\n@media only screen and (min-width: 500px) {\n  #entry {\n    flex-direction: row;\n    overflow: hidden; } }\n", ""]);
 
 // exports
 

@@ -1,56 +1,95 @@
 .rebel {
-  position: relative;
-  background-color: white;
+  flex: 1;
+  transition: .5s;
+  max-height: 50%;
   width: 100vw;
-  height: 50vh;
-
-  &:hover {
+  min-height: 10%;
+  position: relative;
+  &:hover{
+    transition: .5s;
+    max-height: 65% !important;
+    flex-grow: 2;
+    cursor: pointer;
 
     i {
-      transition: box-shadow 0.5s ease-in-out;
-      box-shadow: 0 0 20vh blue;
-      -webkit-transition: box-shadow 0.5s ease-in-out;
+        transition: .8s ease-in-out;
+      box-shadow: 0 0 10px 10px green, inset 0 0 5px 15px green;
     }
-  }
+    p{
+      color: green;
+      transition: .8s ease-in-out;
+    }
+}
 
   p {
+    transition: .8s ease-in-out;
+    font-size: 45px;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 10px;
-    width: 50vw;
-    height: 5vh !important;
-    text-align: center;
-    color: black;
-    font-size: 10vw;
-   }
-
+  }
   i {
+    transition: .8s ease-in-out;
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    width: 25vh;
-    font-size: 25vh;
+    width: 20vh;
+    font-size: 20vh;
   }
 }
 
-
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width:700px){
   .rebel {
-    width: 50vw;
+    flex: 1;
+    text-align: right;
+    transition: .5s;
+    max-width: 50%;
     height: 100vh;
+    min-width: 10%;
+    position: relative;
+    max-height: none;
+    width: 0;
+    &:hover{
+      transition: .5s;
+      max-width: 65% !important;
+      max-height: none !important;
+      flex-grow: 2;
+      cursor: pointer;
+
+      i {
+          transition: .8s ease-in-out;
+        box-shadow: 0 0 10px 10px green, inset 0 0 5px 15px green;
+      }
+      p{
+        color: green;
+        transition: .8s ease-in-out;
+      }
+  }
 
     p {
-      top: 10px;
-      right: 0;
-      transform: translateX(-50%);
-      margin: 0;
-      text-align: center;
+      transition: .8s ease-in-out;
+      margin: 10px;
+      text-align: right;
       font-size: 50px;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      transform: none;
+    }
+    i {
+      transition: .8s ease-in-out;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      width: 25vh;
+      font-size: 25vh;
     }
   }
 }

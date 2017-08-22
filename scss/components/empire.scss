@@ -1,54 +1,91 @@
 .empire {
-  position: relative;
-  background-color: black;
-  width: 100vw;
-  height: 50vh;
-
-  &:hover {
-
-    i {
-      transition: box-shadow 0.5s ease-in-out;
-      box-shadow: 0 0 20vh red;
-      -webkit-transition: box-shadow 0.5s ease-in-out;
-    }
-  }
-
-  p {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 10px;
-    width: 50vw;
-    height: 5vh !important;
-    text-align: center;
-    color: white;
-    font-size: 10vw;
-   }
+flex: 1;
+transition: .5s;
+width: 100vw;
+max-height:50%;
+min-height: 10%;
+position: relative;
+background-color: black;
+&:hover{
+  transition: .5s;
+  max-height: 65% !important;
+  flex-grow: 2;
+  cursor: pointer;
 
   i {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    width: 25vh;
-    color: white;
-    font-size: 25vh;
-   }
+    transition: .8s ease-in-out;
+    box-shadow: 0 0 10px 10px red, inset 0 0 5px 15px red;
+  }
+  p{
+      transition: .8s ease-in-out;
+      color:red;
+  }
+}
+p {
+  margin: 10px 0 0 0;
+  text-align: center;
+  font-size: 45px;
+  color: white;
+}
+i {
+  transition: .5s;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 20vh;
+  color: white;
+  font-size: 20vh;
+ }
 }
 
-@media only screen and (min-width: 500px) {
-  .empire {
-    width: 50vw;
-    height: 100vh;
+  @media only screen and (min-width:700px){
+    .empire {
+    flex: 1;
+    text-align: right;
+    transition: .5s;
+    max-width: 50%;
+    height:100vh;
+    min-width: 10%;
+    position: relative;
+    background-color: black;
+    max-height: none;
+    width: 0;
+    &:hover{
+      transition: .5s;
+      max-width: 65% !important;
+      max-height: none !important;
+      flex-grow: 2;
+      cursor: pointer;
 
+      i {
+        transition: .8s ease-in-out;
+        box-shadow: 0 0 10px 10px red, inset 0 0 5px 15px red;
+      }
+      p{
+          transition: .8s ease-in-out;
+          color:red;
+      }
+  }
     p {
-      top: 10px;
-      margin: 0;
-      text-align: center;
+      margin: 10px;
+      text-align: left;
       font-size: 50px;
+      color: white;
     }
+    i {
+      transition: .5s;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      width: 25vh;
+      color: white;
+      font-size: 25vh;
+     }
   }
 }
